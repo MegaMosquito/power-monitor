@@ -131,6 +131,8 @@ wH = 0
 while True:
 
   if not USE_SIMULATED_DATA:
+    tV = V
+    tI = I
     if ser.in_waiting > 0:
       line = ser.readline().decode('utf-8').rstrip()
       if '{' == line[0] and '}' == line[-1]:

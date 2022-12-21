@@ -4,6 +4,7 @@ DOCKERHUB_ID:=ibmosquito
 NAME:="power-monitor"
 VERSION:="1.0.0"
 
+#SERIAL_DEVICE:=/dev/tty0
 SERIAL_DEVICE:=/dev/ttyUSB0
 
 default: build run
